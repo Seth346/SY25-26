@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36203.30
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Book Scraper", "Book Scraper\Book Scraper.pyproj", "{7DD8A33A-B976-4BBE-BEB0-79209149619D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DD8A33A-B976-4BBE-BEB0-79209149619D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DD8A33A-B976-4BBE-BEB0-79209149619D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21D1B8CB-5D32-4CE6-A69A-47FB69B4A661}
+	EndGlobalSection
+EndGlobal
