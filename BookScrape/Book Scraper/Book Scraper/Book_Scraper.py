@@ -2,16 +2,21 @@
 from bs4 import BeautifulSoup
 
 
+def get_price(prompt):
+    while True:
+        try:
+            value = float(input(prompt))
+            return value
+        except ValueError:
+            print("Invalid input. Please enter a number.")
+
+
 def main_site():
     print("This is your BookScraper.")
     print("Searching ALL pages...\n")
 
-    try:
-        low_price = float(input("Enter the starting price (ex: 5): "))
-        high_price = float(input("Enter the ending price (ex: 20): "))
-    except ValueError:
-        print("Please enter numbers only.")
-        return
+    low_price = get_price("Enter the starting price (ex: 5): ")
+    high_price = get_price("Enter the ending price (ex: 20): ")
 
     page = 1
     found = False
@@ -20,7 +25,6 @@ def main_site():
         url = f"http://books.toscrape.com/catalogue/page-{page}.html"
         response = requests.get(url)
 
-        # stop when pages run out
         if response.status_code != 200:
             break
 
